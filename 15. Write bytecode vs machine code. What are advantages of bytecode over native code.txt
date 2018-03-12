@@ -1,0 +1,15 @@
+"Byte code" refers to data that can be executed by a virtual machine. 
+The virtual machine takes the byte code and produces machine code appropriate for the actual machine it is running on.
+Machine code or machine language is a system of instructions and data directly executed by a computer's central processing unit. 
+
+Since byte code is processed by software, it is usually more abstract than machine code.It's an abstraction for portability.
+Machine code is the lowest-level of abstraction for representing a computer program. 
+
+Machine code is machine specific, bytecode is system-independent. It is rather VM specific and runs on all supported architectures
+
+Advantages and disadvantages:
+Bytecode is shorter, more precise and more readable.
+Every CPU model has its own machine code, or instruction set.
+ 
+At run-time Bytecode  is mostly slower than optimized machine code.
+Even if JIT is used to convert bytecode to machine-code,more  time and space is needed to do that. 

@@ -1,0 +1,10 @@
+Using a compiler, Java source code(.java) is converted to Java byte code (.class files).
+
+Once this is done, JVM loads the .class files at run time and converts them to a machine understandable code using an interpreter.
+
+The ‘Just-In-Time’ compiler compiles the code on a method-by-method basis when they are called. 
+The JVM analyze the method calls in byte code and compiles them to more native and efficient code. 
+This code is then cached in memory for later use.
+
+Once these method calls are compiled, the JVM then executes this optimized code instead of interpreting it which is likely to increase the performance of the execution.
+If JVM use only interpreter the performance of JVM will be slow,so JVM uses JIT compiler and Interpreter both.

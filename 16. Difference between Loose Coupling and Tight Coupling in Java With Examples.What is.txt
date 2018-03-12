@@ -1,0 +1,68 @@
+In object oriented design, Coupling refers to the degree of direct knowledge that one element has of another.
+In other words, how often do changes in class A force related changes in class B.
+
+Tight coupling :Tight coupling means the two classes often change together. 
+if A knows more than it should about the way in which B was implemented, then A and B are tightly coupled.
+
+Example :
+class Traveler
+{
+    Car c=new Car();
+    void startJourney()
+    {
+       c.move();
+    }
+}
+ 
+class Car
+{
+  void move()
+  {
+     // logic...
+  }
+}
+In the above example, Traveler object is depends on car object as it creates an object of Car class inside it
+if a method in car object is changed then changes have to be made in the Traveler class too.
+So its the tight coupling between Traveler and Car class objects
+
+Loose coupling : Loose coupling means they are mostly independent. 
+If the only knowledge that class A has about class B, is what class B has exposed through its interface,
+then class A and class B are said to be loosely coupled. 
+
+Example :
+Interface Vehicle
+{
+   void move();
+}
+class Car implements Vehicle  
+{
+    public void move()
+    {
+         // logic
+    }
+}
+class Bike implements Vehicle
+{
+    public void move()
+    {
+         // logic
+    }
+}
+class Traveler
+{
+    public static void main(String[] args) {
+               Vehicle v = new Car();
+               v.move();
+    }
+ 
+}
+In the above example, Traveler and Car objects are loosely coupled. 
+It means Vehicle is an interface and we can inject any of the implemented classes at run time 
+and provide service to the end user.
+
+the Advantages Of Loose coupling?
+
+-loose coupling improves the test ability.
+-loose coupling helps us follow the GOF principle of program to interfaces, not implementations.
+-it’s much easy to swap parts of code/modules/objects in loose coupling.
+-loose coupling is highly changeable. One module doesn't break other modules in unpredictable ways.
