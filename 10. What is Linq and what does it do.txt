@@ -1,0 +1,25 @@
+Query (LINQ), is a component released within the .NET 3.5 Framework.It stands for Language Integrated Query.
+It's like a query language which can query any data source .
+
+LINQ comprises a series of operators, which are used to query, filter and project data in arrays,
+enumerable classes, relational databases and XML. In order to query data, the data needs to be encapsulated as an object.
+it treats the data source as an Object, rather than a Database. 
+
+LINQ may query any type of data source, like:
+LINQ querying SQL (MS SQL Server supported).
+LINQ querying Datasets (Querying is possible on Datasets and DataTables)
+LINQ querying ORM Solution
+LINQ querying Objects (In-memory data may be queried)
+LINQ querying XML (Querying is possible on XML data source
+LINQ supports querying to those objects that implement the IEnumerable Interface.
+
+Why:
+
+makes it easy to query any data sources. 
+allows to write queries directly in your code
+It also provides full type safety and compile time checking. 
+.NET Framework includes libraries that allow anyone to create a LINQ provider that can query any data source. 
+LINQ providers that make it easy to query specialized data sources.
+
+
+	

@@ -1,0 +1,36 @@
+CLR :
+The Common Language Runtime also known as the CLR, is a virtual machine used as part of Microsoft's .NET framework. 
+It provides an environment to run all the .net programs.The code which runs under CLR is called as managed codes.
+
+It takes Microsoft Intermediate Language ( MSIL) code (bytecode from compiled C#, VB.NET or other .NET source code) 
+and converts it to machine native code using The Just In Time (JTI) compiler.
+it ensures proper memory management (using the Garbage Collector),Improved performance, type safety, exception handling,
+garbage collection, system security,Language independency,Platform independency,architecture independency and thread management.
+
+CTS and CLS are parts of .NET CLR and are responsible for type safety with in the code. 
+Both allow cross language communication and type safety. 
+
+CTS :
+CTS stands for Common Type System.it ensures that data types defined in two different languages get compiled to a common data type.
+It provides a base set of data types for all the languages supported by .net framework.
+
+It defines the rules which Common Language Runtime follows when declaring, using, and managing types.
+It ensures that objects written in different .NET Languages like C#, VB.NET, F# etc. can interact with each other.
+
+It enables cross-language integration, type safety, and high-performance code execution.
+
+It provides an object-oriented model for implementation of many programming languages.
+
+CLS :
+
+CLS stands for Common Language Specification and it is a subset of CTS. 
+It defines a set of rules and restrictions that every language must follow which runs under .NET framework.
+The languages which follows these set of rules are said to be CLS Compliant. 
+In simple words, CLS enables cross-language integration.
+
+For example, one rule is that you cannot use multiple inheritance within .NET Framework. 
+As you know C++ supports multiple inheritance but; when you will try to use that C++ code within C#,
+it is not possible because C# doesn’t supports multiple inheritance.
+
+One another rule is that you cannot have members with same name with case difference only i.e. you cannot have add() and Add() methods. 
+This easily works in C# because it is case-sensitive but when you will try to use that C# code in VB.NET, it is not possible because VB.NET is not case-sensitive.

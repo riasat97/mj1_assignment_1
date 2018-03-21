@@ -1,0 +1,12 @@
+Both Response.Redirect and Server.Transfer methods are used to transfer a user from one web page to another web page. 
+Both methods are used for the same purpose,  But the way they do this transfer / redirect is very different.
+
+
+in “server.transfer”, the transfer is done by the server while In “response.redirect”, the transfer is done by the browser 
+
+in “server.transfer”, Browser URL does not change while 
+In “response.redirect”,	Changes to the redirected target page.
+
+
+use “server.transfer” when Redirect between pages of the same server.
+use “response.redirect” when Redirect between pages on different server and domain.
