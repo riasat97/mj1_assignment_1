@@ -5,7 +5,7 @@ public class RemoveDuplicate {
     
      private static int noOfDistinctArray(int[] num) {
          
-         int n=0;
+         int n=1;
          for(int i=0;i<num.length-1;i++){
              if(num[i]!=num[i+1])n++;
          }
@@ -17,11 +17,12 @@ public class RemoveDuplicate {
        Arrays.sort(num);
        int n=noOfDistinctArray(num);
       // System.out.println("Distinct no       : " + n);
-       int res[]=new int[n];
+       int res[]=new int[n],i;
        n=0;
-       for(int i=0;i<num.length-1;i++){
+       for( i=0;i<num.length-1;i++){
            if(num[i]!=num[i+1])res[n++]=num[i];
        }
+       res[n++]=num[i];
        return res;
     }
     public static void main(String args[]){
